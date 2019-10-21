@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   function generateParticles({clientX, clientY}){
-    console.log(particles.length);
     const num = Math.floor(Math.random() * 300 + 150);
     for(let i = 0; i < num; i++){
       const color = colors[Math.floor(Math.random() * colors.length)];
