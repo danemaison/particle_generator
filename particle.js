@@ -31,15 +31,14 @@ class Particle {
       this.alpha -= alphaDecay;
     }
 
-    coordinates.x += directions.x * speed;
-    coordinates.y += directions.y * speed;
-
     context.beginPath();
     context.fillStyle = color;
     context.arc(coordinates.x, coordinates.y, size, 0, 2 * Math.PI);
     context.globalAlpha = this.alpha;
     context.fill();
     context.closePath();
+    coordinates.x += directions.x * speed;
+    coordinates.y += directions.y * speed;
   }
 
 }

@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function(){
   const context = canvas.getContext('2d');
   let particles = [];
   const colors = ['#ff0303', '#00ff28'];
+  // const colors = ['orange', 'purple', 'yellow', 'lightgreen'];
+  // const colors = ['#7f00ff', '#fffc00'];
 
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
